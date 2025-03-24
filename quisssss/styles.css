@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+.cozinheira-img {
+    width: 100%;
+    max-width: 100px;  /* Ajusta a largura máxima para 100px */
+    height: auto;
+    object-fit: contain;  /* Mantém a proporção da imagem */
+}
+
+.quiz-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-page {
+    display: none;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.option button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Mantém o estilo original do botão "Comprar Agora" */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Ajustes para dispositivos menores (móveis) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px; /* Reduz o tamanho dos títulos */
+    }
+
+    .option button {
+        font-size: 16px;
+        padding: 10px; /* Ajusta o tamanho dos botões */
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .options {
+        display: block;
+    }
+
+    .option {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

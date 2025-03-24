@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas para fazer em casa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="testando.png" alt="chef" class="chef">
+        </header>
+        <div class="quiz-container">
+            <div id="page1" class="quiz-page">
+                <h2>Você gosta de cozinhar ou quer aprender receitas fáceis e deliciosas?</h2>
+                <div class="options">
+                    <div class="option" onclick="goToPage(2)">
+                        <button>😊 Sim, adoro cozinhar!</button>
+                    </div>
+                    <div class="option" onclick="goToPage(2)">
+                        <button>🚀 Quero aprender e melhorar minhas habilidades!</button>
+                    </div>
+                </div>
+            </div>
+            <div id="page2" class="quiz-page" style="display: none;">
+                <h2>Que tipo de receitas você prefere testar primeiro?</h2>
+                <div class="options">
+                    <div class="option" onclick="goToPage(3)">
+                        <button>🍰 Doces e sobremesas irresistíveis</button>
+                    </div>
+                    <div class="option" onclick="goToPage(3)">
+                        <button>🥐 Café da manhã, almoço e jantar</button>
+                    </div>
+                </div>
+            </div>
+            <div id="page3" class="quiz-page" style="display: none;">
+                <h2>Qual o seu nível de experiência na cozinha?</h2>
+                <div class="options">
+                    <div class="option" onclick="goToPage(4)">
+                        <button>👩‍🍳 Sou iniciante, quero receitas fáceis e práticas!</button>
+                    </div>
+                    <div class="option" onclick="goToPage(4)">
+                        <button>👩‍🍳Tenho experiência e adoro desafios culinários</button>
+                    </div>
+                </div>
+            </div>
+            <div id="page4" class="quiz-page" style="display: none;">
+                <h2>Quanto tempo você prefere gastar preparando suas receitas?</h2>
+                <div class="options">
+                    <div class="option" onclick="goToPage(5)">
+                        <button>⏱️ Receitas rápidas e práticas (menos de 30 minutos)</button>
+                    </div>
+                    <div class="option" onclick="goToPage(5)">
+                        <button>🎉 Receitas bem elaboradas para qualquer ocasiões</button>
+                    </div>
+                </div>
+            </div>
+            <div id="page5" class="quiz-page" style="display: none;">
+                <h2>Você gostaria de ter acesso a 40 receitas deliciosas e fáceis de preparar em casa?</h2>
+                <div class="options">
+                    <div class="option" onclick="goToPage(6)">
+                        <button>🤩 Sim, quero experimentar essas receitas agora!</button>
+                    </div>
+                    <div class="option" onclick="goToPage(6)">
+                        <button>🤔 Ainda estou em dúvida, quero mais informações!</button>
+                    </div>
+                </div>
+            </div>
+            <div id="page6" class="quiz-page" style="display: none;">
+                <h2>Parabéns! 🎉 Você está a um passo de descobrir 40 receitas deliciosas que vão transformar suas refeições em casa!</h2>
+                <p>🍴 Com este guia, você aprenderá receitas fáceis, rápidas e incrivelmente saborosas, com um passo a passo detalhado e ingredientes acessíveis e fáceis de encontrar, que surpreenderão sua família e amigos! O acesso ao guia será enviado pelo Gmail logo após a aquisição.</p>
+                <ul>
+                </ul>
+                <button onclick="window.location.href='https://pay.hotmart.com/G98798081B?checkoutMode=10'">Acessar Agora</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
