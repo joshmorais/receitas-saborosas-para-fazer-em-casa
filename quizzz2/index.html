@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Receitas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <p>Responda às perguntas e descubra pratos incríveis que combinam com seu estilo de vida e paladar.</p>
+  </header>
+
+  <main>
+    <section id="secao1">
+      <h2>Estudos mostram que quem prepara suas próprias refeições tende a ter uma alimentação mais equilibrada, consome menos ultraprocessados e, como resultado, pode até viver mais.</h2>
+      <form>
+        <div class="question">
+          <p>👨‍🍳 Você tem experiência na cozinha?</p>
+          <label><input type="radio" name="experiencia" value="A"> Não sou iniciante, mas ainda estou aprendendo.</label>
+          <label><input type="radio" name="experiencia" value="B"> Sim, já tenho experiência e gosto de cozinhar!</label>
+        </div>
+      </form>
+      <button class="next-btn" data-next="secao2">Próximo</button>
+    </section>
+
+    <section id="secao2" style="display: none;">
+      <form>
+        <div class="question">
+          <p>⏳ Quanto tempo você gostaria de gastar preparando suas refeições?</p>
+          <label><input type="radio" name="tempo" value="A"> O mínimo possível: 20 a 30 minutos.</label>
+          <label><input type="radio" name="tempo" value="B"> Gosto de cozinhar com calma</label>
+        </div>
+      </form>
+      <button class="next-btn" data-next="secao3">Próximo</button>
+    </section>
+
+    <section id="secao3" style="display: none;">
+      <h2>Café da Manhã</h2>
+      <img src="cafecan.png" alt="Café da Manhã">
+      <form>
+        <div class="question">
+          <p>☕ Como é o seu café da manhã ideal?</p>
+          <label><input type="radio" name="cafe1" value="A"> Algo rápido e prático, como café com pão ou torrada.</label>
+          <label><input type="radio" name="cafe1" value="B"> Prefiro algo nutritivo, como ovos, frutas e suco natural.</label>
+        </div>
+      </form>
+      <button class="next-btn" data-next="secao4">Próximo</button>
+    </section>
+
+    <section id="secao4" style="display: none;">
+      <h2>Almoço Perfeito</h2>
+      <img src="almococan.png" alt="Almoço Perfeito">
+      <form>
+        <div class="question">
+          <p>🥗 Como você prefere o seu almoço?</p>
+          <label><input type="radio" name="almoco1" value="A"> Algo simples e rápido</label>
+          <label><input type="radio" name="almoco1" value="B"> Um prato completo e saboroso</label>
+        </div>
+      </form>
+      <button class="next-btn" data-next="secao5">Próximo</button>
+    </section>
+
+    <section id="secao5" style="display: none;">
+      <h2>Lanches Deliciosos</h2>
+      <img src="lanchecan.png" alt="Lanches Deliciosos">
+      <form>
+        <div class="question">
+          <p>🍪 Qual tipo de lanche mais combina com você?</p>
+          <label><input type="radio" name="lanches1" value="A"> Doces, como bolos e biscoitos</label>
+          <label><input type="radio" name="lanches1" value="B"> Salgados, como sanduíches e snacks</label>
+        </div>
+      </form>
+      <button class="next-btn" data-next="secao6">Próximo</button>
+    </section>
+
+    <section id="secao6" style="display: none;">
+      <h2>Jantar Reconfortante</h2>
+      <img src="jantarcan.png" alt="Jantar Reconfortante">
+      <form>
+        <div class="question">
+          <p>🍲 O que você prefere para o jantar?</p>
+          <label><input type="radio" name="jantar1" value="A"> Algo reconfortante e fácil de preparar, como um arroz com feijão.</label>
+          <label><input type="radio" name="jantar1" value="B"> Uma refeição mais elaborada, com várias opções de pratos.</label>
+        </div>
+      </form>
+      <button class="next-btn" data-next="secao7">proximo</button>
+    </section>
+
+    <section id="secao7" style="display: none;">
+      <div class="parabens-box">
+        <h3>Parabéns! 🎉</h3>
+        <p> Você concluiu o quiz! Com base nas suas respostas, preparamos um e-book exclusivo com 40 receitas incríveis, perfeitas para o seu dia a dia. O acesso será enviado para o Gmail cadastrado, então, após a aquisição, é só conferir sua caixa de entrada e começar a cozinhar deliciosos pratos!</p>
+        <button onclick="window.location.href='https://pay.hotmart.com/G98798081B?checkoutMode=10'">Baixar E-Book</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.querySelectorAll('.next-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        let currentSection = this.parentElement;
+        let nextSectionId = this.getAttribute('data-next');
+        let nextSection = document.getElementById(nextSectionId);
+        
+        if (nextSection) {
+          currentSection.style.display = 'none';
+          nextSection.style.display = 'block';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #FF6347;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Ajustando a imagem do banner */
+header img {
+  width: 100%;
+  max-width: 1200px; /* Ajusta o tamanho máximo da imagem */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+/* Seções do quiz */
+section {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  margin-bottom: 15px;
+}
+
+/* Imagens dentro das seções */
+section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Estilos para as perguntas */
+.question {
+  margin-bottom: 15px;
+}
+
+.question p {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.question label {
+  display: block;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+/* Botão */
+button {
+  background-color: #FF6347;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #e5533a;
+}
+
+/* Caixa de parabéns */
+.parabens-box {
+  background-color: #fff3cd;
+  border: 2px solid #ffcc00;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.parabens-box h3 {
+  color: #d68b00;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.parabens-box p {
+  color: #333;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+/* Adicionando responsividade */
+@media (max-width: 768px) {
+  /* Ajusta o tamanho das fontes e layout para telas médias */
+  body {
+      font-size: 14px;
+  }
+
+  section {
+      padding: 15px;
+  }
+
+  button {
+      width: 100%; /* Botão ocupa toda a largura da tela */
+      font-size: 18px;
+  }
+
+  .parabens-box h3 {
+      font-size: 1.2em;
+  }
+
+  .parabens-box p {
+      font-size: 1em;
+  }
+
+  /* Ajuste para o conteúdo principal */
+  main {
+      padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para telas menores */
+  body {
+      font-size: 12px;
+  }
+
+  header {
+      padding: 15px;
+  }
+
+  .question p {
+      font-size: 1em;
+  }
+
+  button {
+      padding: 14px;
+      font-size: 16px;
+  }
+
+  section h2 {
+      font-size: 1.3em;
+  }
+
+  /* Ajustando os títulos e imagens */
+  section img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .parabens-box {
+      padding: 10px;
+      margin: 15px 0;
+  }
+
+  .parabens-box h3 {
+      font-size: 1.2em;
+  }
+
+  .parabens-box p {
+      font-size: 0.9em;
+  }
+}
